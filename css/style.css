@@ -158,7 +158,7 @@ h3 {
     margin: 20px 0;
 }
 .home-body {
-    background-image: url(../images/homestock25.png);
+    background-image: url("../images/homestock25.png");
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-attachment: fixed;
