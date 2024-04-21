@@ -2,6 +2,28 @@ body {
     background-color: #333;
 }
 
+/* skip to main */
+.skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: white;
+}
+
+.skip-link:focus {
+    left: 0; 
+    top: 0;
+    height: 50px;
+    width: 100px;
+    z-index: 9999;
+    color: white;
+}
+/* end of skip to main */
+
+
 nav {
     display: flex;
     justify-content: space-evenly;
