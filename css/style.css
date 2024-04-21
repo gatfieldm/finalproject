@@ -352,6 +352,9 @@ form {
         transform: scale(1.1);
         transition: transform 0.2s;
     }
+    transform: scale(1.05);
+    transition: transform 0.5s; 
+   
 }
 
 .button2:focus {
@@ -383,5 +386,10 @@ form {
     }
     .button2:hover {
         transform: none;
+    }
+    .button2 {
+        img{
+            transform: none;
+        }
     }
 }
