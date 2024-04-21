@@ -7,6 +7,7 @@ nav {
     justify-content: space-evenly;
     background-color: #1b1b1b;
     padding: 10px;
+    border-bottom: 2px solid yellow;
 
 }
 
@@ -52,7 +53,7 @@ h2 {
 h3 {
     text-align: center;
     color: white;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .items{
@@ -61,6 +62,10 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+
 
 }
 
@@ -74,10 +79,12 @@ h3 {
     /* make the text white */
     color: white;
     
+    
     ul {
         list-style-type: circle;
         font-size: 20px;
         line-height: 30px;
+        background-color: transparent;
     }
 }
 
@@ -113,15 +120,17 @@ h3 {
     padding-bottom: 10px;
     border: 5px solid yellow;
     border-radius: 20px;
-    background-color: #4c4c4c;
+    background: rgb(27,27,27);
+    background: linear-gradient(180deg, rgba(27,27,27,1) 0%, rgba(132,132,132,1) 50%, rgba(139,142,73,1) 100%);
     flex-direction: column;
 }
 .price {
     color: yellow;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 20px;
+    
 }
 
 .category{
@@ -162,8 +171,9 @@ h3 {
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center bottom;
-
+    background-position: center center;
+    
+    
 }
 
 .pretty-nav {
@@ -181,6 +191,8 @@ h3 {
     text-align: center;
     justify-content: space-around;
     align-items: center;
+    border: none;
+    padding-bottom: 50px;
 
     div{
         border: 10px solid yellow;
@@ -237,7 +249,10 @@ h3 {
     
 }
 
-
+.tablet-body, .laptop-body, .headphone-body, .rec-body {
+    background: rgb(20,20,20);
+background: linear-gradient(90deg, rgba(20,20,20,1) 3%, rgba(59,59,59,1) 42%, rgba(93,93,93,1) 76%);
+}
 
 
 /* Recommendations Page */
@@ -253,6 +268,14 @@ form {
     font-family: 'dejaVu sans', sans-serif; 
 
         input[type="text"], textarea {
+            width: 300px;
+            height: 40px; 
+            border: 3px solid gold; 
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: 'dejaVu sans', sans-serif;
+        }
+        input[type="email"], textarea {
             width: 300px;
             height: 40px; 
             border: 3px solid gold; 
@@ -322,7 +345,8 @@ form {
 
 .button2:hover {
     /* transform: scale(1.05);  */
-    background-color: grey; /* Change background color on hover */
+    background: none;
+    background-color: rgb(38, 38, 38); /* Change background color on hover */
     cursor: pointer;
     img {
         transform: scale(1.1);
